@@ -1,0 +1,46 @@
+body {
+    background-image: url('../assets/bgimg.jpg.jpg');
+    background-size: cover;
+    color:white;
+
+}
+
+.all {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.all .all__col1,
+.all .all__col2 { 
+    width: 400px;
+    height: 800px;
+    background-color:rgba(225,225,225,0.3);
+    border-radius: 20px;
+
+}
+
+.btnArea  {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.all .all__col2 .btnArea .charBtn {
+    background-color: #3d3d3d;
+    margin-top: 20px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 22px;
+    outline: none;
+    border-style: none;
+    box-shadow: 4px 4px 4px silver;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.all .all__col2 .btnArea .charBtn:hover {
+    background-color: #ffffff;
+    color: #3d3d3d;
+}
+

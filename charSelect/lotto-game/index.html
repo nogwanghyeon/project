@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4LEAF | lotto-game</title>
+
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <div class="title">
+        <span class="title__txt">lotto game</span>
+
+        <div class="btnArea"> 
+            <input type="button" value="Start Game" onclick="StartGame()" />
+            <input type="button" value="Game EXIT" onclick="exitGame()" />
+
+
+
+        </div>
+
+        <div id="textArea"></div>
+
+    </div>
+
+</body>
+
+<script>
+
+
+function StartGame(){
+
+    var str1 = Math.floor(Math.random() * 44+1);
+    var str2 = Math.floor(Math.random() * 44+1);
+    var str3 = Math.floor(Math.random() * 44+1);
+    var str4 = Math.floor(Math.random() * 44+1);
+    var str5 = Math.floor(Math.random() * 44+1);
+    var str6 = Math.floor(Math.random() * 44+1  );
+
+    console.log(str1,str2,str3,str4,str5,str6);
+
+
+
+
+
+    
+
+    var t = document.getElementById("textArea");
+    t.innerText = str1 + "," + str2 + "," + str3 + "," + str4 + "," + str5 + "," + str6;
+
+    console.log(t);
+
+
+
+}
+
+
+
+function exitGame(){ alert("게임이 종료되었습니다.");
+    var t = document.getElementById("textArea");
+
+t.innerText = "";
+}
+
+
+
+</script>
+
+
+
+</html>
